@@ -9,26 +9,51 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 </head>
 <body>
-    
+    <!-- <div class="container-fluid"> -->
+        <nav class="navbar navbar-light bg-light navbar-expand-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand">DFU</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarMenu" class="collapse navbar-collapse ">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Extra</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- </div> -->
         <div class="container myContainer">
             <form action="" class="form needs-validation" novalidate>
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                        <label for="fname">First Name: </label>
-                        <input type="text" class="form-control" id="fname"> 
+                        <label for="fname">First Name </label>
+                        <input type="text" class="form-control" id="fname" required> 
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                        <label for="lname">Last Name: </label>
-                        <input type="text" class="form-control" id="lname"> 
+                        <label for="lname">Last Name </label>
+                        <input type="text" class="form-control" id="lname" required> 
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" class="form-control" id="email"> 
+                    <label for="email">Email </label>
+                    <input type="email" class="form-control" id="email" required> 
                 </div>
                 <div class="form-group">
                     <label for="age">Age: </label>
