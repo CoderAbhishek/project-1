@@ -12,7 +12,7 @@
     <!-- <div class="container-fluid"> -->
         <nav class="navbar navbar-light bg-light navbar-expand-sm">
             <div class="container">
-                <a href="#" class="navbar-brand">DFU</a>
+                <a href="#" class="navbar-brand"><strong>Free<span class="text-primary">Lancer</span></strong></a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,51 +42,78 @@
                         <div class="form-group">
                         <label for="fname">First Name </label>
                         <input type="text" class="form-control" id="fname" required> 
+                        <small class="invalid-feedback">Required</small>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
                         <label for="lname">Last Name </label>
                         <input type="text" class="form-control" id="lname" required> 
+                        <small class="invalid-feedback">Required</small>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Email </label>
-                    <input type="email" class="form-control" id="email" required> 
+                    <input type="email" class="form-control" id="email" required minlength="5"> 
+                    <small class="form-text invalid-feedback">Please enter a valid email-id</small>
                 </div>
-                <div class="form-group">
-                    <label for="age">Age: </label>
-                    <input type="number" class="form-control" id="age"> 
+                <div class="dropdown form-group">
+                    <label for="usertype">Your current role </label>
+                    <select name="usertype" class="form-control" id="usertype">
+                        <option value="Dv">Dev</option>
+                        <option value="UX">UX Designer</option>
+                        <option value="QA">QA</option>
+                        <option value="BA">BA</option>
+                        <option value="Ot">Other</option>
+                    </select>  
                 </div>
-                <div class="form-group">
-                <div class="form-radio">
+                <div class="form-group form-radio">
+                    <div class="form-text">Gender</div>
                     <input type="radio" id="gender1" name="gender" class="form-radio-input" required>
                     <label for="gender1" class="form-radio-label">Male</label>
                     <input type="radio" id="gender2" name="gender" class="form-radio-input" required>
                     <label for="gender2" class="form-radio-label">Female</label>
+                    <small class="invalid-feedback">Please select your gender</small>
                 </div>
+                <div class="form-group form-check">
+                    <div class="form-text">Services you might need</div>
+                    <div>
+                    <input type="checkbox" id="UI" class="form-check-input">
+                    <label for="UI" class="form-check-label">UI Test</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="FE" class="form-check-input">
+                        <label for="FE" class="form-check-label">Frontend Dev.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="BE" class="form-check-input">
+                        <label for="BE" class="form-check-label">Backend Dev.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="SW" class="form-check-input">
+                        <label for="SW" class="form-check-label">Complete Package</label>
+                    </div>
                 </div>
                 <div class="form-group">
-                <div class="form-check">
-                    <div>What did you like about this site?</div>
-                    <div>
-                    <input type="checkbox" id="abc" class="form-check-input">
-                    <label for="abc" class="form-check-label">Option A</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="def" class="form-check-input">
-                        <label for="def" class="form-check-label">Option B</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="ghi" class="form-check-input">
-                        <label for="ghi" class="form-check-label">Option C</label>
-                    </div>
+                    <label for="textarea">Where did you hear about us?</label>
+                    <textarea name="info" id="textarea" cols="30" rows="3" class="form-control" required></textarea>
+                    <small class="invalid-feedback">Required</small>
                 </div>
+                <div class="form-group form-radio">
+                    <div class="form-text">Urgency of the project</div>
+                    <input type="radio" id="low" name="urgency" class="form-radio-input" required>
+                    <label for="low" class="form-radio-label">3-4 months</label>
+                    <input type="radio" id="normal" name="urgency" class="form-radio-input" required>
+                    <label for="normal" class="form-radio-label">1-2 months</label>
+                    <input type="radio" id="high" name="urgency" class="form-radio-input" required>
+                    <label for="high" class="form-radio-label">Very Urgent</label>
+                    <small class="invalid-feedback">Please specify</small>
+                    <div class="small text-warning">*Costing is based on level of urgency</div>
                 </div>
                 <div class="form-group">
-                    <label for="textarea">How can we improve?</label>
-                    <textarea name="info" id="textarea" cols="30" rows="3" class="form-control"></textarea>
+                    <label for="textarea">Specifications, if any</label>
+                    <textarea name="specifications" id="textarea" cols="30" rows="3" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" role="submit">Submit</button>
             </form>
