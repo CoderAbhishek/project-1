@@ -12,7 +12,7 @@
     <!-- <div class="container-fluid"> -->
         <nav class="navbar navbar-light bg-light navbar-expand-sm">
             <div class="container">
-                <a href="#" class="navbar-brand"><strong>Free<span class="text-primary">Lancer</span></strong></a>
+                <a href="#" class="navbar-brand"><strong>Your<span class="text-primary">FREELancer</span></strong></a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,24 +38,24 @@
         <div class="container myContainer">
             <form action="" class="form needs-validation" novalidate>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm-6">
                         <div class="form-group">
                         <label for="fname">First Name </label>
-                        <input type="text" class="form-control" id="fname" required> 
-                        <small class="invalid-feedback">Required</small>
+                        <input type="text" class="form-control" id="fname" placeholder="required" required> 
+                        <small class="invalid-feedback">Please fill this field</small>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-6">
                         <div class="form-group">
                         <label for="lname">Last Name </label>
-                        <input type="text" class="form-control" id="lname" required> 
-                        <small class="invalid-feedback">Required</small>
+                        <input type="text" class="form-control" id="lname" placeholder="required" required> 
+                        <small class="invalid-feedback">Please fill this field</small>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Email </label>
-                    <input type="email" class="form-control" id="email" required minlength="5"> 
+                    <input type="email" class="form-control" id="email" placeholder="ab@xy" required minlength="5"> 
                     <small class="form-text invalid-feedback">Please enter a valid email-id</small>
                 </div>
                 <div class="dropdown form-group">
@@ -97,8 +97,8 @@
                 </div>
                 <div class="form-group">
                     <label for="textarea">Where did you hear about us?</label>
-                    <textarea name="info" id="textarea" cols="30" rows="3" class="form-control" required></textarea>
-                    <small class="invalid-feedback">Required</small>
+                    <textarea name="info" id="textarea" cols="30" rows="3" class="form-control" aria-placeholder="Required" required></textarea>
+                    <small class="invalid-feedback">Please fill this field</small>
                 </div>
                 <div class="form-group form-radio">
                     <div class="form-text">Urgency of the project</div>
@@ -114,6 +114,17 @@
                 <div class="form-group">
                     <label for="textarea">Specifications, if any</label>
                     <textarea name="specifications" id="textarea" cols="30" rows="3" class="form-control"></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <div class="form-text">How can we get in touch</div>
+                    <div>
+                    <input type="checkbox" id="ph" class="form-check-input">
+                    <label for="ph" class="form-check-label">Phone</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="em" class="form-check-input">
+                        <label for="em" class="form-check-label">Email</label>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary" role="submit">Submit</button>
             </form>
